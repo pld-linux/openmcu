@@ -6,6 +6,7 @@ Release:	1
 License:	MPL 1.0
 Group:		Applications/Communications
 Source0:	http://www.openh323.org/bin/%{name}_%{version}.tar.gz
+# Source0-md5:	041c468256f426e9e5a8cec0cdc769f6
 Patch0:		%{name}-mak_files.patch
 URL:		http://www.openh323.org/
 BuildRequires:	openh323-devel >= 1.11.7
