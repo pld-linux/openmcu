@@ -1,7 +1,7 @@
 Summary:	H.323 conferencing server
 Summary(pl):	Serwer konferencji H.323
 Name:		openmcu
-Version:	1.0.18
+Version:	1.1.0
 Release:	1
 License:	MPL
 Group:		Applications/Communications
@@ -10,10 +10,9 @@ Patch0:		%{name}-mak_files.patch
 URL:		http://www.openh323.org/
 BuildRequires:	expat-devel
 BuildRequires:	libstdc++-devel
-BuildRequires:	openh323-devel
-BuildRequires:	openssl-devel
-BuildRequires:	pwlib-devel
+BuildRequires:	openh323-devel >= 1.10.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+%requires_eq	openh323
 
 %description
 A free H.323 conferencing server. Part of OpenH323 project.
