@@ -1,7 +1,7 @@
 Summary:	H.323 conferencing server
 Summary(pl):	Serwer konferencji H.323
 Name:		openmcu
-Version:	1.1.0
+Version:	1.1.3
 Release:	1
 License:	MPL
 Group:		Applications/Communications
