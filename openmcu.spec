@@ -1,7 +1,8 @@
-Summary:	H.323 conferencing server    
+Summary:	H.323 conferencing server
+Summary(pl):	Serwer konferencji H.323
 Name:		openmcu
 Version:	1.0alpha2
-Release:	1
+Release:	2
 License:	MPL
 Group:		Applications/Communications
 Group(de):	Applikationen/Kommunikation
@@ -14,6 +15,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description 
 A free H.323 conferencing server. Part of OpenH323 project.
+
+%description -l pl
+Darmowy serwer konferencji H.323. Czê¶æ projektu OpenH323.
 
 %prep
 %setup -qn %{name}
