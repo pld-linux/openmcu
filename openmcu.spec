@@ -15,7 +15,7 @@ BuildRequires:	openssl-devel
 BuildRequires:	pwlib-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%description 
+%description
 A free H.323 conferencing server. Part of OpenH323 project.
 
 %description -l pl
