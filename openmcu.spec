@@ -10,11 +10,11 @@ Group(pl):	Aplikacje/Komunikacja
 Source0:	http://www.openh323.org/bin/%{name}_%{version}.tar.gz
 Patch0:		%{name}-mak_files.patch
 URL:		http://www.openh323.org/
-BuildRequires:	openh323-devel
-BuildRequires:	pwlib-devel
-BuildRequires:	openssl-devel
 BuildRequires:	expat-devel
 BuildRequires:	libstdc++-devel
+BuildRequires:	openh323-devel
+BuildRequires:	openssl-devel
+BuildRequires:	pwlib-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description 
