@@ -38,13 +38,11 @@ install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1}
 install obj_*/%{name}	$RPM_BUILD_ROOT%{_bindir}
 install %{name}.1	$RPM_BUILD_ROOT%{_mandir}/man1
 
-gzip -9nf *.txt
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc *.txt
 %attr(755,root,root) %{_bindir}/*
 %{_mandir}/man1/*
