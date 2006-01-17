@@ -3,7 +3,7 @@ Summary(pl):	Serwer konferencji H.323
 Name:		openmcu
 Version:	2.1.0
 %define fver	%(echo %{version} | tr . _)
-Release:	1
+Release:	2
 License:	MPL 1.0
 Group:		Applications/Communications
 Source0:	http://dl.sourceforge.net/openh323/%{name}-v%{fver}-src-tar.gz
