@@ -1,17 +1,17 @@
 Summary:	H.323 conferencing server
 Summary(pl):	Serwer konferencji H.323
 Name:		openmcu
-Version:	1.1.7
-Release:	2
+Version:	2.1.1
+%define fver	%(echo %{version} | tr . _)
+Release:	1
 License:	MPL 1.0
 Group:		Applications/Communications
-Source0:	http://www.openh323.org/bin/%{name}_%{version}.tar.gz
-# Source0-md5:	041c468256f426e9e5a8cec0cdc769f6
+Source0:	http://dl.sourceforge.net/openh323/%{name}-v%{fver}-src-tar.gz
+# Source0-md5:	db561a73bc96557b105625f2107b03ef
 Patch0:		%{name}-mak_files.patch
-Patch1:		%{name}-update.patch
 URL:		http://www.openh323.org/
-BuildRequires:	openh323-devel >= 1.12.0
-BuildRequires:	pwlib-devel >= 1.5.0
+BuildRequires:	openh323-devel >= 1.15
+BuildRequires:	pwlib-devel >= 1.10.0
 %requires_eq	openh323
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -22,13 +22,13 @@ A free H.323 conferencing server. Part of OpenH323 project.
 Darmowy serwer konferencji H.323. Czê¶æ projektu OpenH323.
 
 %prep
-%setup -q -n %{name}
+%setup -q -n %{name}_v%{fver}
 %patch0 -p1
-%patch1 -p1
 
 %build
 %{__make} %{?debug:debugshared}%{!?debug:optshared} \
-	OPTCCFLAGS="%{rpmcflags} -fno-rtti -fno-exceptions"
+	CXX="%{__cxx}" \
+	OPTCCFLAGS="%{rpmcflags} -fno-exceptions"
 
 %install
 rm -rf $RPM_BUILD_ROOT
