@@ -1,5 +1,5 @@
 Summary:	H.323 conferencing server
-Summary(pl):	Serwer konferencji H.323
+Summary(pl.UTF-8):   Serwer konferencji H.323
 Name:		openmcu
 Version:	2.1.1
 %define fver	%(echo %{version} | tr . _)
@@ -18,8 +18,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 A free H.323 conferencing server. Part of OpenH323 project.
 
-%description -l pl
-Darmowy serwer konferencji H.323. Czê¶æ projektu OpenH323.
+%description -l pl.UTF-8
+Darmowy serwer konferencji H.323. CzÄ™Å›Ä‡ projektu OpenH323.
 
 %prep
 %setup -q -n %{name}_v%{fver}
