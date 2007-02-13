@@ -1,5 +1,5 @@
 Summary:	H.323 conferencing server
-Summary(pl.UTF-8):   Serwer konferencji H.323
+Summary(pl.UTF-8):	Serwer konferencji H.323
 Name:		openmcu
 Version:	2.1.1
 %define fver	%(echo %{version} | tr . _)
