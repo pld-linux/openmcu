@@ -23,7 +23,7 @@ Darmowy serwer konferencji H.323. Część projektu OpenH323.
 
 %prep
 %setup -q -n %{name}_v%{fver}
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 %{__make} %{?debug:debugshared}%{!?debug:optshared} \
